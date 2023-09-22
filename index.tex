@@ -1,7 +1,6 @@
 \documentclass{exam} 
 \usepackage{amsmath,amssymb,enumitem,fdsymbol,float,tikz,etoolbox,ifthen,xcolor,fullpage,ulem,graphicx, comment,hyperref,tikz,mhchem} 
-
-
+\graphicspath{{./Images/}}
 \setlength\parindent{0in}
 %\pagestyle{empty}
 
@@ -135,8 +134,22 @@ If we imagine drilling a hole from the surface of Earth to its centre and placin
 \color{blue}
 \subsubsection*{Answers}
 \begin{parts}
-    \part Student answer to 2.(a) goes here.
-    \part Student answer to 2.(b) goes here.
+    \part
+    	\begin{equation}
+    	F(r) = \begin{cases}
+    	\frac{\alpha}{r^2} \quad \text{if} \, r > r_E \\
+    \beta r \quad \text{if} \, 0 \le r < r_E
+    	\end{cases}
+    	\end{equation}
+    \part The following is a graph of force as distance of the object from Earth changes.
+    
+    \includegraphics[scale=0.25]{question2graph}
+    
+    We know experimentally that the acceleration of objects at the Earth's surface is $9.81 m/s^2$. In the graph above, the distance from the center of the Earth to its surface is labelled $r_E$. We can therefore conclude that the force $F$ at $r = r_E$ is $9.81 m/s^2$ multiplied by the mass of the object. Since $F(r)$ is continuous in the interval $[0, \infty)$, we know that $\frac{\alpha}{r^2} = \beta r$ where $r = r_E$. We can therefore find the proportionality of $\alpha$ and $\beta$ using the equation:
+    \begin{align*}
+    \frac{\alpha}{r_E^2} &= \beta r_E \\
+    \alpha &= \beta r_E^3
+    \end{align*}
 \end{parts}
 \color{black}
 
