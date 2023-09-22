@@ -23,10 +23,8 @@
 
 \begin{itemize}
     \item \#66220104 David {\bf Jiang} 
-    \item \#24681012 Luna {\bf Lovegood}
+    \item \#71389423 Adam {\bf Long}
     \item \#87654321 Neville {\bf Longbottom}
-    \item \#12108642 Albus {\bf Dumbledore}
-    \textcolor{red}{\item \#00000000 Mundungus {\bf Fletcher}  (non-contributing)}
 \end{itemize}
 
 \
@@ -137,8 +135,8 @@ If we imagine drilling a hole from the surface of Earth to its centre and placin
     \part
     	\begin{equation}
     	F(r) = \begin{cases}
-    	\frac{\alpha}{r^2} \quad \text{if} \, r > r_E \\
-    \beta r \quad \text{if} \, 0 \le r < r_E
+    	\frac{\alpha}{r^2} \quad &\text{if} \, r > r_E \\
+    \beta r \quad &\text{if} \, 0 \le r < r_E
     	\end{cases}
     	\end{equation}
     \part The following is a graph of force as distance of the object from Earth changes.
@@ -179,10 +177,17 @@ The expression for the gravitational force on a small object in the mantle is sl
 \color{blue}
 \subsubsection*{Answers}
 \begin{parts}
-    \part Student answer to 3.(a) goes here.
+    \part
+    \begin{equation}
+    F(R) = \begin{cases}
+    1.6 R \quad &\text{if} \, 0 < R \le 0.4 \\
+    	\frac{0.04}{R^2}+R \quad &\text{if} \, 0.4 < R < 1
+    
+    \end{cases}
+    \end{equation}
     \part Student answer to 3.(b) goes here.
-    \part Student answer to 3.(c) goes here.
-    \part Student answer to 3.(d) goes here.
+    \part Assuming that air resistance is negligible, the ball would initially accelerate at the highest acceleration it will experience throughout the fall (we experimentally know this to be at $9.81m/s^2$). As the ball falls though the mantle, its acceleration will gradually decrease in a manner that appears linear. However, as the ball nears the inner end of the mantle and beginning of the core, the ball's acceleration will once again increase briefly at an exponential rate. When the ball leaves the mantle and enters the core, its acceleration will begin to decrease again at a linear rate, with the acceleration approaching 0 as its fractional distance to the Earth's core approaches 0.
+    \part We can tell that the values given in this question are approximated because, when the gravitational force as a function of R is graphed, there is a jump discontinuity where the mantle and core connect at $R=0.4$. Physically, we know this to be impossible because an instantenous change in acceleration (wherein $\delta t \rightarrow 0$) would require an infinite amount of jerk, which is both theoretically impossible and has never been recorded when an object in real life passes the mantle into the core. Due to this, we know that the actual graph of the acceleration of an object from the Earth's surface to its center would be continuous at the interval $(0,1)$, meaning that the coefficients of R in this case must have been approximated to produce this discrepancy.
 \end{parts}
 \color{black}
 
